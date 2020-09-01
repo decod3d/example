@@ -1,0 +1,18 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="android-sdk-library" />
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\jarRepositories.xml" timestamp="1598652362497" />
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\modules.xml" timestamp="1598895453365" />
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\gradle.xml" timestamp="1598900619619" />
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\uiDesigner.xml" timestamp="1598652628357" />
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\misc.xml" timestamp="1598652362487" />
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\compiler.xml" timestamp="1598652293038" />
+    <file path="C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\workspace.xml" timestamp="1598962594939" />
+  </project-files>
+</conversion>

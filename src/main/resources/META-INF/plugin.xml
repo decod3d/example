@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>org.example.example</id>
+    <name>Example</name>
+    <vendor email="" url=""></vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- none yet -->
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.company.idea.Example" topic="com.intellij.ide.AppLifecycleListener"/>
+    </applicationListeners>
+</idea-plugin>

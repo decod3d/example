@@ -1,0 +1,779 @@
+2020-09-01 14:14:21,690 [      1]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-01 14:14:21,785 [     96]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-202.6948.69, 24 Aug 2020 23:22) 
+2020-09-01 14:14:21,788 [     99]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-01 14:14:21,788 [     99]   INFO -        #com.intellij.idea.Main - JRE: 11.0.8+10-b944.31 (JetBrains s.r.o.) 
+2020-09-01 14:14:21,788 [     99]   INFO -        #com.intellij.idea.Main - JVM: 11.0.8+10-b944.31 (OpenJDK 64-Bit Server VM) 
+2020-09-01 14:14:21,788 [     99]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.auto.reload.plugins=true -Didea.classpath.index.enabled=false -Didea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins -Didea.required.plugins.id=org.example.example -Didea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system -Xms256m -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant -ea 
+2020-09-01 14:14:21,790 [    101]   INFO -        #com.intellij.idea.Main - library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\Jeff Kappalan\AppData\Local\Microsoft\WindowsApps;C:\Users\Jeff Kappalan\AppData\Roaming\npm;C:\Users\Jeff Kappalan\AppData\Local\Programs\Microsoft VS Code\bin;. 
+2020-09-01 14:14:21,791 [    102]   INFO -        #com.intellij.idea.Main - boot library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin 
+2020-09-01 14:14:21,808 [    119]   INFO -        #com.intellij.idea.Main - locale=en_US JNU=Cp1252 file.encoding=windows-1252
+  idea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config
+  idea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system
+  idea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins
+  idea.log.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system/log 
+2020-09-01 14:14:21,960 [    271]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 4; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@2f2e3e3[Running, parallelism = 3, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@5c2b0b48 
+2020-09-01 14:14:22,411 [    722]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 603 ms 
+2020-09-01 14:14:22,416 [    727]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-01 14:14:22,551 [    862]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:14:22,565 [    876]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-detection-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-detection-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:14:22,745 [   1056]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\java, version=202.6948.69) misses optional descriptor profiler-java.xml 
+java.nio.file.NoSuchFileException: /META-INF/profiler-java.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:14:22,825 [   1136]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (202.6948.69), com.intellij.platform.images (202.6948.69), JetBrains maven model api classes (202.6948.69), JetBrains Repository Search (202.6948.69), Subversion (202.6948.69), XPathView + XSLT (202.6948.69), XSLT Debugger (202.6948.69), Smali Support (202.6948.69), Configuration Script (202.6948.69), Copyright (202.6948.69), Gradle (202.6948.69), Java (202.6948.69), Bytecode Viewer (202.6948.69), JUnit (202.6948.69), Java IDE Customization (202.6948.69), Java Stream Debugger (202.6948.69), Eclipse Interoperability (202.6948.69), Java Bytecode Decompiler (202.6948.69), macOS Light Theme (202.6948.69), Windows 10 Light Theme (202.6948.69), Properties (202.6948.69), Ant (202.6948.69), Java Internationalization (202.6948.69), UI Designer (202.6948.69), JavaFX (202.6948.69), Resource Bundle Editor (202.6948.69), Machine Learning Code Completion (202.6948.69), Task Management (202.6948.69), Mercurial (202.6948.69), Webp Support (202.6948.69), EditorConfig (202.6948.69), Terminal (202.6948.69), Git (202.6948.69), ChangeReminder (202.6948.69), Next File Prediction (202.6948.69), GitHub (202.6948.69), Shell Script (202.6948.69), TextMate Bundles (202.6948.69), YAML (202.6948.69), Settings Repository (202.6948.69), IntelliLang (202.6948.69), TestNG (202.6948.69), Code Coverage for Java (202.6948.69), Groovy (202.6948.69), Maven (202.6948.69), Gradle-Java (202.6948.69), Plugin DevKit (202.6948.69), Gradle-Maven (202.6948.69), Kotlin (1.3.72-release-IJ2020.1-6), Android (10.4.0.202.6948.69), Markdown (202.6948.69), Grazie (202.6948.69) 
+2020-09-01 14:14:22,825 [   1136]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Example (1.0-SNAPSHOT) 
+2020-09-01 14:14:23,308 [   1619]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=492; buffer=10; max=492 
+2020-09-01 14:14:23,418 [   1729]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes 
+2020-09-01 14:14:23,515 [   1826]   INFO - fs.newvfs.persistent.FSRecords - Marking VFS as corrupted: 'C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system\caches\names.dat' does not exist 
+2020-09-01 14:14:23,591 [   1902]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-01 14:14:23,615 [   1926]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-01 14:14:23,661 [   1972]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2020-09-01 14:14:23,685 [   1996]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\bin\win\fsnotifier64.exe 
+2020-09-01 14:14:23,750 [   2061]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-01 14:14:23,756 [   2067]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-09-01 14:14:23,756 [   2067]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-09-01 14:14:23,768 [   2079]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2020-09-01 14:14:23,899 [   2210]   INFO - stubs.SerializationManagerImpl - Name storage is repaired 
+2020-09-01 14:14:24,373 [   2684]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-01 14:14:24,392 [   2703]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.p9.show.roots.in.file.chooser, inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, copy.reference.popup, new.large.text.file.viewer, property.value.inplace.editing, terminal.shell.command.handling 
+2020-09-01 14:14:24,421 [   2732]   INFO -                         STDERR - javassist.CannotCompileException: by java.lang.reflect.InvocationTargetException 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.util.proxy.DefineClassHelper$JavaOther.defineClass(DefineClassHelper.java:220) 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.util.proxy.DefineClassHelper$Java11.defineClass(DefineClassHelper.java:52) 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.util.proxy.DefineClassHelper.toClass(DefineClassHelper.java:260) 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.ClassPool.toClass(ClassPool.java:1240) 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.ClassPool.toClass(ClassPool.java:1098) 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.ClassPool.toClass(ClassPool.java:1056) 
+2020-09-01 14:14:24,422 [   2733]   INFO -                         STDERR - 	at javassist.CtClass.toClass(CtClass.java:1298) 
+2020-09-01 14:14:24,423 [   2734]   INFO -                         STDERR - 	at com.company.idea.Example.test1(Example.java:28) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at com.company.idea.Example.appFrameCreated(Example.java:18) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.invokeListener(MessageBusImpl.java:636) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.deliverMessage(MessageBusImpl.java:406) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.pumpWaitingBuses(MessageBusImpl.java:384) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.pumpMessages(MessageBusImpl.java:366) 
+2020-09-01 14:14:24,424 [   2735]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.access$100(MessageBusImpl.java:32) 
+2020-09-01 14:14:24,425 [   2736]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl$MessagePublisher.invoke(MessageBusImpl.java:187) 
+2020-09-01 14:14:24,426 [   2737]   INFO -                         STDERR - 	at com.sun.proxy.$Proxy26.appFrameCreated(Unknown Source) 
+2020-09-01 14:14:24,426 [   2737]   INFO -                         STDERR - 	at com.intellij.idea.IdeStarter.main(IdeStarter.kt:105) 
+2020-09-01 14:14:24,426 [   2737]   INFO -                         STDERR - 	at com.intellij.idea.ApplicationLoader$startApp$8.run(ApplicationLoader.kt:231) 
+2020-09-01 14:14:24,426 [   2737]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:783) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.security.AccessController.doPrivileged(Native Method) 
+2020-09-01 14:14:24,427 [   2738]   INFO -                         STDERR - 	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at java.base/java.lang.Thread.run(Thread.java:834) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - Caused by: java.lang.reflect.InvocationTargetException 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at javassist.util.proxy.DefineClassHelper$JavaOther.defineClass(DefineClassHelper.java:214) 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	... 33 more 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - Caused by: java.lang.LinkageError: loader com.intellij.util.lang.UrlClassLoader @d2cc05a attempted duplicate class definition for com.intellij.ui.components.labels.LinkLabel. (com.intellij.ui.components.labels.LinkLabel is in unnamed module of loader com.intellij.util.lang.UrlClassLoader @d2cc05a, parent loader 'platform') 
+2020-09-01 14:14:24,428 [   2739]   INFO -                         STDERR - 	at java.base/java.lang.ClassLoader.defineClass1(Native Method) 
+2020-09-01 14:14:24,429 [   2740]   INFO -                         STDERR - 	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017) 
+2020-09-01 14:14:24,429 [   2740]   INFO -                         STDERR - 	... 38 more 
+2020-09-01 14:14:26,426 [   4737]   INFO - il.indexing.FileBasedIndexImpl - Indexes to be rebuilt after corruption:FilenameIndex(v = 3),FrameworkDetectionIndex(v = 0),TodoIndex(v = 4107),IdIndex(v = 4113),filetypes(v = 3),Stubs(v = 46),Trigram.Index(v = 4099),fileIncludes(v = 6),DomFileIndex(v = -1189920956),RelaxSymbolIndex(v = 0),XmlTagNames(v = 1),XmlNamespaces(v = 8),html5.custom.attributes.index(v = 1),SchemaTypeInheritance(v = 2),json.file.root.values(v = 5),XsltSymbolIndex(v = 0),bytecodeAnalysis(v = 4107),java.auto.module.name(v = 5),java.source.module.name(v = 2),java.null.method.argument(v = 4097),java.fun.expression(v = 4102),java.binary.plus.expression(v = 4100),xmlProperties(v = 2),ant-imports(v = 5),com.intellij.uiDesigner.FormClassIndex(v = 0),JavaFxControllerClassIndex(v = 1),javafx.id.name(v = 3),javafx.custom.component(v = 2),editorconfig.index.name(v = 5),yaml.keys.name(v = 1),groovy.trait.fields(v = 5),groovy.trait.methods(v = 25),IdeaPluginRegistrationIndex(v = 3),PluginIdModuleIndex(v = 1),PluginIdDependenciesIndex(v = 1),devkit.ExtensionPointIndex(v = 0),org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex(v = 5),org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex(v = 3),org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex(v = 3),org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex(v = 4),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex(v = 1),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex(v = 1),org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex(v = 5),org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex(v = 2),org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex(v = 1),org.jetbrains.kotlin.ide.konan.index.KotlinNativeMetaFileIndex(v = 4),com.android.tools.idea.model.AndroidManifestIndex$Companion$NAME$1.NAME(v = 4),BindingXmlIndex(v = 7),MlModelFileIndex(v = 1) 
+2020-09-01 14:14:26,430 [   4741]   INFO - leBasedIndexDataInitialization - Initialization done: 2723 
+2020-09-01 14:14:26,637 [   4948]   INFO - tellij.psi.stubs.StubIndexImpl - Following stub indices will be built:dom.namespaceKey(v = 1),dom.elementClass(v = 0),properties.index(v = 2),gr.class.fqn(v = 1),gr.script.fqn(v = 2),gr.field.name(v = 2),gr.method.name(v = 2),gr.annot.method.name(v = 2),gr.annot.members(v = 2),gr.script.class(v = 2),gr.class.super(v = 2),gr.anonymous.class(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyContractedFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex(v = 2),markdown.header(v = 2),java.annotations(v = 2),java.class.extlist(v = 3),java.field.name(v = 2),java.method.name(v = 2),jvm.static.member.name(v = 2),jvm.static.member.type(v = 2),java.anonymous.baseref(v = 2),java.method.parameter.types(v = 3),java.class.shortname(v = 4),java.class.fqn(v = 1),java.module.name(v = 4) 
+2020-09-01 14:14:26,638 [   4949]   INFO - exImpl$StubIndexInitialization - Initialization done: 207 
+2020-09-01 14:14:36,286 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-01 14:14:36,294 [      8]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-202.6948.69, 24 Aug 2020 23:22) 
+2020-09-01 14:14:36,296 [     10]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-01 14:14:36,296 [     10]   INFO -        #com.intellij.idea.Main - JRE: 11.0.8+10-b944.31 (JetBrains s.r.o.) 
+2020-09-01 14:14:36,296 [     10]   INFO -        #com.intellij.idea.Main - JVM: 11.0.8+10-b944.31 (OpenJDK 64-Bit Server VM) 
+2020-09-01 14:14:36,297 [     11]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.auto.reload.plugins=true -Didea.classpath.index.enabled=false -Didea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins -Didea.required.plugins.id=org.example.example -Didea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system -Xms256m -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant -ea 
+2020-09-01 14:14:36,297 [     11]   INFO -        #com.intellij.idea.Main - library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\Jeff Kappalan\AppData\Local\Microsoft\WindowsApps;C:\Users\Jeff Kappalan\AppData\Roaming\npm;C:\Users\Jeff Kappalan\AppData\Local\Programs\Microsoft VS Code\bin;. 
+2020-09-01 14:14:36,297 [     11]   INFO -        #com.intellij.idea.Main - boot library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin 
+2020-09-01 14:14:36,301 [     15]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 4; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@8462dc[Running, parallelism = 3, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@1b811169 
+2020-09-01 14:14:36,303 [     17]   INFO -        #com.intellij.idea.Main - locale=en_US JNU=Cp1252 file.encoding=windows-1252
+  idea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config
+  idea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system
+  idea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins
+  idea.log.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system/log 
+2020-09-01 14:14:36,552 [    266]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 246 ms 
+2020-09-01 14:14:36,555 [    269]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-01 14:14:36,777 [    491]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:14:36,788 [    502]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-detection-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-detection-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:14:36,943 [    657]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\java, version=202.6948.69) misses optional descriptor profiler-java.xml 
+java.nio.file.NoSuchFileException: /META-INF/profiler-java.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:14:36,992 [    706]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (202.6948.69), com.intellij.platform.images (202.6948.69), JetBrains maven model api classes (202.6948.69), JetBrains Repository Search (202.6948.69), Subversion (202.6948.69), XPathView + XSLT (202.6948.69), XSLT Debugger (202.6948.69), Smali Support (202.6948.69), Configuration Script (202.6948.69), Copyright (202.6948.69), Gradle (202.6948.69), Java (202.6948.69), Bytecode Viewer (202.6948.69), JUnit (202.6948.69), Java IDE Customization (202.6948.69), Java Stream Debugger (202.6948.69), Eclipse Interoperability (202.6948.69), Java Bytecode Decompiler (202.6948.69), macOS Light Theme (202.6948.69), Windows 10 Light Theme (202.6948.69), Properties (202.6948.69), Ant (202.6948.69), Java Internationalization (202.6948.69), UI Designer (202.6948.69), JavaFX (202.6948.69), Resource Bundle Editor (202.6948.69), Machine Learning Code Completion (202.6948.69), Task Management (202.6948.69), Mercurial (202.6948.69), Webp Support (202.6948.69), EditorConfig (202.6948.69), Terminal (202.6948.69), Git (202.6948.69), ChangeReminder (202.6948.69), Next File Prediction (202.6948.69), GitHub (202.6948.69), Shell Script (202.6948.69), TextMate Bundles (202.6948.69), YAML (202.6948.69), Settings Repository (202.6948.69), IntelliLang (202.6948.69), TestNG (202.6948.69), Code Coverage for Java (202.6948.69), Groovy (202.6948.69), Maven (202.6948.69), Gradle-Java (202.6948.69), Plugin DevKit (202.6948.69), Gradle-Maven (202.6948.69), Kotlin (1.3.72-release-IJ2020.1-6), Android (10.4.0.202.6948.69), Markdown (202.6948.69), Grazie (202.6948.69) 
+2020-09-01 14:14:36,992 [    706]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Example (1.0-SNAPSHOT) 
+2020-09-01 14:14:37,322 [   1036]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=492; buffer=10; max=492 
+2020-09-01 14:14:37,331 [   1045]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes 
+2020-09-01 14:14:37,561 [   1275]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2020-09-01 14:14:37,593 [   1307]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-01 14:14:37,643 [   1357]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\bin\win\fsnotifier64.exe 
+2020-09-01 14:14:37,653 [   1367]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-01 14:14:37,692 [   1406]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-09-01 14:14:37,692 [   1406]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-09-01 14:14:37,704 [   1418]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-01 14:14:37,723 [   1437]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2020-09-01 14:14:38,350 [   2064]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - javassist.NotFoundException: setColor(..) is not found in com.intellij.openapi.wm.impl.StripeButtonUI 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - 	at javassist.CtClassType.getDeclaredMethod(CtClassType.java:1343) 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - 	at com.company.idea.Example.test2(Example.java:38) 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - 	at com.company.idea.Example.appFrameCreated(Example.java:19) 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) 
+2020-09-01 14:14:38,355 [   2069]   INFO -                         STDERR - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.invokeListener(MessageBusImpl.java:636) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.deliverMessage(MessageBusImpl.java:406) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.pumpWaitingBuses(MessageBusImpl.java:384) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.pumpMessages(MessageBusImpl.java:366) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl.access$100(MessageBusImpl.java:32) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.intellij.util.messages.impl.MessageBusImpl$MessagePublisher.invoke(MessageBusImpl.java:187) 
+2020-09-01 14:14:38,356 [   2070]   INFO -                         STDERR - 	at com.sun.proxy.$Proxy26.appFrameCreated(Unknown Source) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at com.intellij.idea.IdeStarter.main(IdeStarter.kt:105) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at com.intellij.idea.ApplicationLoader$startApp$8.run(ApplicationLoader.kt:231) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:783) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:610) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1085) 
+2020-09-01 14:14:38,357 [   2071]   INFO -                         STDERR - 	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.security.AccessController.doPrivileged(Native Method) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665) 
+2020-09-01 14:14:38,358 [   2072]   INFO -                         STDERR - 	at java.base/java.lang.Thread.run(Thread.java:834) 
+2020-09-01 14:14:38,413 [   2127]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.p9.show.roots.in.file.chooser, inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, copy.reference.popup, new.large.text.file.viewer, property.value.inplace.editing, terminal.shell.command.handling 
+2020-09-01 14:14:40,163 [   3877]   INFO - il.indexing.FileBasedIndexImpl - Indexes to be rebuilt after version change:FilenameIndex(vfs creation stamp : 1598962463640 -> 1598962477521),FrameworkDetectionIndex(vfs creation stamp : 1598962463640 -> 1598962477521),TodoIndex(vfs creation stamp : 1598962463640 -> 1598962477521),IdIndex(vfs creation stamp : 1598962463640 -> 1598962477521),filetypes(vfs creation stamp : 1598962463640 -> 1598962477521),Stubs(vfs creation stamp : 1598962463640 -> 1598962477521),Trigram.Index(vfs creation stamp : 1598962463640 -> 1598962477521),fileIncludes(vfs creation stamp : 1598962463640 -> 1598962477521),DomFileIndex(vfs creation stamp : 1598962463640 -> 1598962477521),RelaxSymbolIndex(vfs creation stamp : 1598962463640 -> 1598962477521),XmlTagNames(vfs creation stamp : 1598962463640 -> 1598962477521),XmlNamespaces(vfs creation stamp : 1598962463640 -> 1598962477521),html5.custom.attributes.index(vfs creation stamp : 1598962463640 -> 1598962477521),SchemaTypeInheritance(vfs creation stamp : 1598962463640 -> 1598962477521),json.file.root.values(vfs creation stamp : 1598962463640 -> 1598962477521),XsltSymbolIndex(vfs creation stamp : 1598962463640 -> 1598962477521),bytecodeAnalysis(vfs creation stamp : 1598962463640 -> 1598962477521),java.auto.module.name(vfs creation stamp : 1598962463640 -> 1598962477521),java.source.module.name(vfs creation stamp : 1598962463640 -> 1598962477521),java.null.method.argument(vfs creation stamp : 1598962463640 -> 1598962477521),java.fun.expression(vfs creation stamp : 1598962463640 -> 1598962477521),java.binary.plus.expression(vfs creation stamp : 1598962463640 -> 1598962477521),xmlProperties(vfs creation stamp : 1598962463640 -> 1598962477521),ant-imports(vfs creation stamp : 1598962463640 -> 1598962477521),com.intellij.uiDesigner.FormClassIndex(vfs creation stamp : 1598962463640 -> 1598962477521),JavaFxControllerClassIndex(vfs creation stamp : 1598962463640 -> 1598962477521),javafx.id.name(vfs creation stamp : 1598962463640 -> 1598962477521),javafx.custom.component(vfs creation stamp : 1598962463640 -> 1598962477521),editorconfig.index.name(vfs creation stamp : 1598962463640 -> 1598962477521),yaml.keys.name(vfs creation stamp : 1598962463640 -> 1598962477521),groovy.trait.fields(vfs creation stamp : 1598962463640 -> 1598962477521),groovy.trait.methods(vfs creation stamp : 1598962463640 -> 1598962477521),IdeaPluginRegistrationIndex(vfs creation stamp : 1598962463640 -> 1598962477521),PluginIdModuleIndex(vfs creation stamp : 1598962463640 -> 1598962477521),PluginIdDependenciesIndex(vfs creation stamp : 1598962463640 -> 1598962477521),devkit.ExtensionPointIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex(vfs creation stamp : 1598962463640 -> 1598962477521),org.jetbrains.kotlin.ide.konan.index.KotlinNativeMetaFileIndex(vfs creation stamp : 1598962463640 -> 1598962477521),com.android.tools.idea.model.AndroidManifestIndex$Companion$NAME$1.NAME(vfs creation stamp : 1598962463640 -> 1598962477521),BindingXmlIndex(vfs creation stamp : 1598962463640 -> 1598962477521),MlModelFileIndex(vfs creation stamp : 1598962463640 -> 1598962477521) 
+2020-09-01 14:14:40,168 [   3882]   INFO - leBasedIndexDataInitialization - Initialization done: 2513 
+2020-09-01 14:14:40,474 [   4188]   INFO - tellij.psi.stubs.StubIndexImpl - Following stub indices will be built:dom.namespaceKey(v = 1),dom.elementClass(v = 0),properties.index(v = 2),gr.class.fqn(v = 1),gr.script.fqn(v = 2),gr.field.name(v = 2),gr.method.name(v = 2),gr.annot.method.name(v = 2),gr.annot.members(v = 2),gr.script.class(v = 2),gr.class.super(v = 2),gr.anonymous.class(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyContractedFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex(v = 2),markdown.header(v = 2),java.annotations(v = 2),java.class.extlist(v = 3),java.field.name(v = 2),java.method.name(v = 2),jvm.static.member.name(v = 2),jvm.static.member.type(v = 2),java.anonymous.baseref(v = 2),java.method.parameter.types(v = 3),java.class.shortname(v = 4),java.class.fqn(v = 1),java.module.name(v = 4) 
+2020-09-01 14:14:40,475 [   4189]   INFO - exImpl$StubIndexInitialization - Initialization done: 306 
+2020-09-01 14:15:15,218 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-01 14:15:15,232 [     14]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-202.6948.69, 24 Aug 2020 23:22) 
+2020-09-01 14:15:15,233 [     15]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-01 14:15:15,233 [     15]   INFO -        #com.intellij.idea.Main - JRE: 11.0.8+10-b944.31 (JetBrains s.r.o.) 
+2020-09-01 14:15:15,233 [     15]   INFO -        #com.intellij.idea.Main - JVM: 11.0.8+10-b944.31 (OpenJDK 64-Bit Server VM) 
+2020-09-01 14:15:15,234 [     16]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.auto.reload.plugins=true -Didea.classpath.index.enabled=false -Didea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins -Didea.required.plugins.id=org.example.example -Didea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system -Xms256m -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant -ea 
+2020-09-01 14:15:15,234 [     16]   INFO -        #com.intellij.idea.Main - library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\Jeff Kappalan\AppData\Local\Microsoft\WindowsApps;C:\Users\Jeff Kappalan\AppData\Roaming\npm;C:\Users\Jeff Kappalan\AppData\Local\Programs\Microsoft VS Code\bin;. 
+2020-09-01 14:15:15,234 [     16]   INFO -        #com.intellij.idea.Main - boot library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin 
+2020-09-01 14:15:15,236 [     18]   INFO -        #com.intellij.idea.Main - locale=en_US JNU=Cp1252 file.encoding=windows-1252
+  idea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config
+  idea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system
+  idea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins
+  idea.log.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system/log 
+2020-09-01 14:15:15,243 [     25]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 4; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@2b740cff[Running, parallelism = 3, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@25ee6f6a 
+2020-09-01 14:15:15,452 [    234]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 216 ms 
+2020-09-01 14:15:15,466 [    248]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-01 14:15:15,729 [    511]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:15:15,732 [    514]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-detection-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-detection-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:15:15,845 [    627]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\java, version=202.6948.69) misses optional descriptor profiler-java.xml 
+java.nio.file.NoSuchFileException: /META-INF/profiler-java.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:15:15,920 [    702]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (202.6948.69), com.intellij.platform.images (202.6948.69), JetBrains maven model api classes (202.6948.69), JetBrains Repository Search (202.6948.69), Subversion (202.6948.69), XPathView + XSLT (202.6948.69), XSLT Debugger (202.6948.69), Smali Support (202.6948.69), Configuration Script (202.6948.69), Copyright (202.6948.69), Gradle (202.6948.69), Java (202.6948.69), Bytecode Viewer (202.6948.69), JUnit (202.6948.69), Java IDE Customization (202.6948.69), Java Stream Debugger (202.6948.69), Eclipse Interoperability (202.6948.69), Java Bytecode Decompiler (202.6948.69), macOS Light Theme (202.6948.69), Windows 10 Light Theme (202.6948.69), Properties (202.6948.69), Ant (202.6948.69), Java Internationalization (202.6948.69), UI Designer (202.6948.69), JavaFX (202.6948.69), Resource Bundle Editor (202.6948.69), Machine Learning Code Completion (202.6948.69), Task Management (202.6948.69), Mercurial (202.6948.69), Webp Support (202.6948.69), EditorConfig (202.6948.69), Terminal (202.6948.69), Git (202.6948.69), ChangeReminder (202.6948.69), Next File Prediction (202.6948.69), GitHub (202.6948.69), Shell Script (202.6948.69), TextMate Bundles (202.6948.69), YAML (202.6948.69), Settings Repository (202.6948.69), IntelliLang (202.6948.69), TestNG (202.6948.69), Code Coverage for Java (202.6948.69), Groovy (202.6948.69), Maven (202.6948.69), Gradle-Java (202.6948.69), Plugin DevKit (202.6948.69), Gradle-Maven (202.6948.69), Kotlin (1.3.72-release-IJ2020.1-6), Android (10.4.0.202.6948.69), Markdown (202.6948.69), Grazie (202.6948.69) 
+2020-09-01 14:15:15,920 [    702]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Example (1.0-SNAPSHOT) 
+2020-09-01 14:15:16,192 [    974]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=492; buffer=10; max=492 
+2020-09-01 14:15:16,200 [    982]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes 
+2020-09-01 14:15:16,482 [   1264]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-01 14:15:16,490 [   1272]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2020-09-01 14:15:16,529 [   1311]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\bin\win\fsnotifier64.exe 
+2020-09-01 14:15:16,537 [   1319]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-01 14:15:16,570 [   1352]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-01 14:15:16,585 [   1367]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-09-01 14:15:16,585 [   1367]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-09-01 14:15:16,611 [   1393]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2020-09-01 14:15:17,133 [   1915]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-01 14:15:17,310 [   2092]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.p9.show.roots.in.file.chooser, inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, copy.reference.popup, new.large.text.file.viewer, property.value.inplace.editing, terminal.shell.command.handling 
+2020-09-01 14:15:19,068 [   3850]   INFO - il.indexing.FileBasedIndexImpl - Indexes to be rebuilt after version change:FilenameIndex(vfs creation stamp : 1598962477521 -> 1598962516400),FrameworkDetectionIndex(vfs creation stamp : 1598962477521 -> 1598962516400),TodoIndex(vfs creation stamp : 1598962477521 -> 1598962516400),IdIndex(vfs creation stamp : 1598962477521 -> 1598962516400),filetypes(vfs creation stamp : 1598962477521 -> 1598962516400),Stubs(vfs creation stamp : 1598962477521 -> 1598962516400),Trigram.Index(vfs creation stamp : 1598962477521 -> 1598962516400),fileIncludes(vfs creation stamp : 1598962477521 -> 1598962516400),DomFileIndex(vfs creation stamp : 1598962477521 -> 1598962516400),RelaxSymbolIndex(vfs creation stamp : 1598962477521 -> 1598962516400),XmlTagNames(vfs creation stamp : 1598962477521 -> 1598962516400),XmlNamespaces(vfs creation stamp : 1598962477521 -> 1598962516400),html5.custom.attributes.index(vfs creation stamp : 1598962477521 -> 1598962516400),SchemaTypeInheritance(vfs creation stamp : 1598962477521 -> 1598962516400),json.file.root.values(vfs creation stamp : 1598962477521 -> 1598962516400),XsltSymbolIndex(vfs creation stamp : 1598962477521 -> 1598962516400),bytecodeAnalysis(vfs creation stamp : 1598962477521 -> 1598962516400),java.auto.module.name(vfs creation stamp : 1598962477521 -> 1598962516400),java.source.module.name(vfs creation stamp : 1598962477521 -> 1598962516400),java.null.method.argument(vfs creation stamp : 1598962477521 -> 1598962516400),java.fun.expression(vfs creation stamp : 1598962477521 -> 1598962516400),java.binary.plus.expression(vfs creation stamp : 1598962477521 -> 1598962516400),xmlProperties(vfs creation stamp : 1598962477521 -> 1598962516400),ant-imports(vfs creation stamp : 1598962477521 -> 1598962516400),com.intellij.uiDesigner.FormClassIndex(vfs creation stamp : 1598962477521 -> 1598962516400),JavaFxControllerClassIndex(vfs creation stamp : 1598962477521 -> 1598962516400),javafx.id.name(vfs creation stamp : 1598962477521 -> 1598962516400),javafx.custom.component(vfs creation stamp : 1598962477521 -> 1598962516400),editorconfig.index.name(vfs creation stamp : 1598962477521 -> 1598962516400),yaml.keys.name(vfs creation stamp : 1598962477521 -> 1598962516400),groovy.trait.fields(vfs creation stamp : 1598962477521 -> 1598962516400),groovy.trait.methods(vfs creation stamp : 1598962477521 -> 1598962516400),IdeaPluginRegistrationIndex(vfs creation stamp : 1598962477521 -> 1598962516400),PluginIdModuleIndex(vfs creation stamp : 1598962477521 -> 1598962516400),PluginIdDependenciesIndex(vfs creation stamp : 1598962477521 -> 1598962516400),devkit.ExtensionPointIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex(vfs creation stamp : 1598962477521 -> 1598962516400),org.jetbrains.kotlin.ide.konan.index.KotlinNativeMetaFileIndex(vfs creation stamp : 1598962477521 -> 1598962516400),com.android.tools.idea.model.AndroidManifestIndex$Companion$NAME$1.NAME(vfs creation stamp : 1598962477521 -> 1598962516400),BindingXmlIndex(vfs creation stamp : 1598962477521 -> 1598962516400),MlModelFileIndex(vfs creation stamp : 1598962477521 -> 1598962516400) 
+2020-09-01 14:15:19,073 [   3855]   INFO - leBasedIndexDataInitialization - Initialization done: 2510 
+2020-09-01 14:15:19,467 [   4249]   INFO - tellij.psi.stubs.StubIndexImpl - Following stub indices will be built:dom.namespaceKey(v = 1),dom.elementClass(v = 0),properties.index(v = 2),gr.class.fqn(v = 1),gr.script.fqn(v = 2),gr.field.name(v = 2),gr.method.name(v = 2),gr.annot.method.name(v = 2),gr.annot.members(v = 2),gr.script.class(v = 2),gr.class.super(v = 2),gr.anonymous.class(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyContractedFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex(v = 2),markdown.header(v = 2),java.annotations(v = 2),java.class.extlist(v = 3),java.field.name(v = 2),java.method.name(v = 2),jvm.static.member.name(v = 2),jvm.static.member.type(v = 2),java.anonymous.baseref(v = 2),java.method.parameter.types(v = 3),java.class.shortname(v = 4),java.class.fqn(v = 1),java.module.name(v = 4) 
+2020-09-01 14:15:19,467 [   4249]   INFO - exImpl$StubIndexInitialization - Initialization done: 393 
+2020-09-01 14:15:26,052 [  10834]   INFO - lij.impl.ConversionServiceImpl - conversion will be performed because at least C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\jarRepositories.xml is changed (oldLastModified=-1, newLastModified=1598652362497 
+2020-09-01 14:15:26,187 [  10969]   INFO - BridgeProjectLifecycleListener - Using legacy project model to open project 
+2020-09-01 14:15:26,413 [  11195]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2020-09-01 14:15:26,446 [  11228]   INFO - CompilerWorkspaceConfiguration - Available processors: 4 
+2020-09-01 14:15:26,515 [  11297]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=org.jetbrains.android.compose.AndroidComposeAutoDocumentation) 
+2020-09-01 14:15:27,113 [  11895]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2020-09-01 14:15:27,148 [  11930]   WARN - tartup.impl.StartupManagerImpl - Activities registered via registerPostStartupActivity must be dumb-aware: org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent$projectOpened$1@1b1f81b5 
+2020-09-01 14:15:27,408 [  12190]   INFO - ots.impl.jdkDownloader.JdkAuto - Looking for a local SDK for JDK with name SdkLookup{JDK, com.intellij.openapi.roots.ui.configuration.SdkLookupImpl$continueSdkLookupWithSuggestions$unknownSdk$1$$special$$inlined$let$lambda$1@e54a10 } 
+2020-09-01 14:15:27,631 [  12413]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,635 [  12417]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,661 [  12443]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,661 [  12443]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,661 [  12443]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,661 [  12443]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,662 [  12444]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,687 [  12469]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,691 [  12473]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,759 [  12541]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 9 millis (read time: 1) 
+2020-09-01 14:15:27,764 [  12546]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,765 [  12547]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,765 [  12547]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,765 [  12547]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,765 [  12547]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,765 [  12547]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,766 [  12548]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,766 [  12548]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,766 [  12548]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,791 [  12573]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,791 [  12573]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,792 [  12574]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,792 [  12574]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,792 [  12574]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,792 [  12574]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,793 [  12575]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,793 [  12575]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,793 [  12575]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:27,793 [  12575]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@4916fc59 
+2020-09-01 14:15:27,801 [  12583]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 3ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-01 14:15:28,061 [  12843]   INFO - ProjectRootPostStartUpActivity - C:/Users/Jeff Kappalan/IdeaProjects/woooh/.idea case-sensitivity: expected=false actual=false 
+2020-09-01 14:15:28,078 [  12860]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 580ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-01 14:15:28,099 [  12881]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 1937 ms 
+2020-09-01 14:15:28,102 [  12884]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,102 [  12884]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,103 [  12885]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,103 [  12885]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,113 [  12895]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,113 [  12895]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,114 [  12896]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,114 [  12896]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,115 [  12897]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:28,238 [  13020]   INFO - System.util.ExternalSystemUtil - External project [C:/Users/Jeff Kappalan/IdeaProjects/woooh] resolution task started 
+2020-09-01 14:15:28,799 [  13581]   INFO - ctRoots.impl.UnknownSdkTracker - Automatically set Sdk SdkLookup{JDK, com.intellij.openapi.roots.ui.configuration.SdkLookupImpl$continueSdkLookupWithSuggestions$unknownSdk$1$$special$$inlined$let$lambda$1@e54a10 } to C:\Code Environment\Java\jdk-11.0.8 
+2020-09-01 14:15:28,879 [  13661]   WARN - ion.impl.NotificationCollector - Notification group 'Heap Dump Analysis' is already registered in whitelist 
+2020-09-01 14:15:28,879 [  13661]   WARN - ion.impl.NotificationCollector - Notification group 'Low Memory' is already registered in whitelist 
+2020-09-01 14:15:30,333 [  15115]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,333 [  15115]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,333 [  15115]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,334 [  15116]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,334 [  15116]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,334 [  15116]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,334 [  15116]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,335 [  15117]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,335 [  15117]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,336 [  15118]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,355 [  15137]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,366 [  15148]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,366 [  15148]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,367 [  15149]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,368 [  15150]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,368 [  15150]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,368 [  15150]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,368 [  15150]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,369 [  15151]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,370 [  15152]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,370 [  15152]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,404 [  15186]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,404 [  15186]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,405 [  15187]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,405 [  15187]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,405 [  15187]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,405 [  15187]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,405 [  15187]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,407 [  15189]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,407 [  15189]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,407 [  15189]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,457 [  15239]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,457 [  15239]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,457 [  15239]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,458 [  15240]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,458 [  15240]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,458 [  15240]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,458 [  15240]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,459 [  15241]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,459 [  15241]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,459 [  15241]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,499 [  15281]   INFO - ots.impl.jdkDownloader.JdkAuto - Looking for a local SDK for JDK with name MissingSdkInfo(mySdkName=11, mySdkType=JavaSDK) 
+2020-09-01 14:15:30,513 [  15295]   INFO - ctRoots.impl.UnknownSdkTracker - Automatically set Sdk MissingSdkInfo(mySdkName=11, mySdkType=JavaSDK) to C:/Code Environment/Java/jdk-11.0.8 
+2020-09-01 14:15:30,562 [  15344]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,562 [  15344]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,562 [  15344]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,563 [  15345]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,563 [  15345]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,563 [  15345]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,563 [  15345]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,564 [  15346]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,564 [  15346]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,564 [  15346]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,578 [  15360]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,578 [  15360]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,579 [  15361]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,579 [  15361]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,579 [  15361]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,579 [  15361]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,579 [  15361]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,580 [  15362]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,580 [  15362]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:30,581 [  15363]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,225 [  16007]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,225 [  16007]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,225 [  16007]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,225 [  16007]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,226 [  16008]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,226 [  16008]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,226 [  16008]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,226 [  16008]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,226 [  16008]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,227 [  16009]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,278 [  16060]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,278 [  16060]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,279 [  16061]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,279 [  16061]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,279 [  16061]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,279 [  16061]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,279 [  16061]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,280 [  16062]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,280 [  16062]   INFO -                         STDOUT - test2 
+2020-09-01 14:15:31,280 [  16062]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:30,490 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2020-09-01 14:16:30,512 [     22]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-202.6948.69, 24 Aug 2020 23:22) 
+2020-09-01 14:16:30,514 [     24]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 4; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@38c63cdf[Running, parallelism = 3, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@5e5c06f9 
+2020-09-01 14:16:30,520 [     30]   INFO -        #com.intellij.idea.Main - OS: Windows 10 (10.0, amd64) 
+2020-09-01 14:16:30,520 [     30]   INFO -        #com.intellij.idea.Main - JRE: 11.0.8+10-b944.31 (JetBrains s.r.o.) 
+2020-09-01 14:16:30,520 [     30]   INFO -        #com.intellij.idea.Main - JVM: 11.0.8+10-b944.31 (OpenJDK 64-Bit Server VM) 
+2020-09-01 14:16:30,520 [     30]   INFO -        #com.intellij.idea.Main - JVM Args: -Didea.auto.reload.plugins=true -Didea.classpath.index.enabled=false -Didea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins -Didea.required.plugins.id=org.example.example -Didea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system -Xms256m -Xmx512m -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant -ea 
+2020-09-01 14:16:30,521 [     31]   INFO -        #com.intellij.idea.Main - library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\Jeff Kappalan\AppData\Local\Microsoft\WindowsApps;C:\Users\Jeff Kappalan\AppData\Roaming\npm;C:\Users\Jeff Kappalan\AppData\Local\Programs\Microsoft VS Code\bin;. 
+2020-09-01 14:16:30,521 [     31]   INFO -        #com.intellij.idea.Main - boot library path: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains\jbre\jbr-11_0_8-windows-x64-b944.31\jbr\bin 
+2020-09-01 14:16:30,523 [     33]   INFO -        #com.intellij.idea.Main - locale=en_US JNU=Cp1252 file.encoding=windows-1252
+  idea.config.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\config
+  idea.system.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system
+  idea.plugins.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\plugins
+  idea.log.path=C:\Users\Jeff Kappalan\IdeaProjects\example\build\idea-sandbox\system/log 
+2020-09-01 14:16:30,962 [    472]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 439 ms 
+2020-09-01 14:16:30,976 [    486]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational 
+2020-09-01 14:16:30,991 [    501]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:16:31,015 [    525]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\Groovy, version=202.6948.69) misses optional descriptor duplicates-detection-groovy.xml 
+java.nio.file.NoSuchFileException: /META-INF/duplicates-detection-groovy.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:16:31,190 [    700]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\plugins\java, version=202.6948.69) misses optional descriptor profiler-java.xml 
+java.nio.file.NoSuchFileException: /META-INF/profiler-java.xml
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystem.newInputStream(ZipFileSystem.java:591)
+	at jdk.zipfs/jdk.nio.zipfs.ZipPath.newInputStream(ZipPath.java:721)
+	at jdk.zipfs/jdk.nio.zipfs.ZipFileSystemProvider.newInputStream(ZipFileSystemProvider.java:275)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at com.intellij.openapi.util.JDOMUtil.load(JDOMUtil.java:351)
+	at com.intellij.ide.plugins.BasePathResolver.resolvePath(BasePathResolver.java:54)
+	at com.intellij.ide.plugins.PluginXmlPathResolver.resolvePath(PluginXmlPathResolver.java:58)
+	at com.intellij.ide.plugins.XmlReader.readDependencies(XmlReader.java:215)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl.readExternal(IdeaPluginDescriptorImpl.java:190)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.java:94)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromDirAndNormalize(PluginDescriptorLoader.java:145)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.java:120)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptor(PluginDescriptorLoader.java:44)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.lambda$loadDescriptorsFromDir$1(PluginDescriptorLoader.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:215)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:26)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:194)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:186)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-09-01 14:16:31,236 [    746]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (202.6948.69), com.intellij.platform.images (202.6948.69), JetBrains maven model api classes (202.6948.69), JetBrains Repository Search (202.6948.69), Subversion (202.6948.69), XPathView + XSLT (202.6948.69), XSLT Debugger (202.6948.69), Smali Support (202.6948.69), Configuration Script (202.6948.69), Copyright (202.6948.69), Gradle (202.6948.69), Java (202.6948.69), Bytecode Viewer (202.6948.69), JUnit (202.6948.69), Java IDE Customization (202.6948.69), Java Stream Debugger (202.6948.69), Eclipse Interoperability (202.6948.69), Java Bytecode Decompiler (202.6948.69), macOS Light Theme (202.6948.69), Windows 10 Light Theme (202.6948.69), Properties (202.6948.69), Ant (202.6948.69), Java Internationalization (202.6948.69), UI Designer (202.6948.69), JavaFX (202.6948.69), Resource Bundle Editor (202.6948.69), Machine Learning Code Completion (202.6948.69), Task Management (202.6948.69), Mercurial (202.6948.69), Webp Support (202.6948.69), EditorConfig (202.6948.69), Terminal (202.6948.69), Git (202.6948.69), ChangeReminder (202.6948.69), Next File Prediction (202.6948.69), GitHub (202.6948.69), Shell Script (202.6948.69), TextMate Bundles (202.6948.69), YAML (202.6948.69), Settings Repository (202.6948.69), IntelliLang (202.6948.69), TestNG (202.6948.69), Code Coverage for Java (202.6948.69), Groovy (202.6948.69), Maven (202.6948.69), Gradle-Java (202.6948.69), Plugin DevKit (202.6948.69), Gradle-Maven (202.6948.69), Kotlin (1.3.72-release-IJ2020.1-6), Android (10.4.0.202.6948.69), Markdown (202.6948.69), Grazie (202.6948.69) 
+2020-09-01 14:16:31,236 [    746]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Example (1.0-SNAPSHOT) 
+2020-09-01 14:16:31,516 [   1026]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=492; buffer=10; max=492 
+2020-09-01 14:16:31,524 [   1034]   INFO - tellij.util.io.FileChannelUtil - un-interruptible FileChannel-s will be used for indexes 
+2020-09-01 14:16:31,822 [   1332]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2020-09-01 14:16:31,832 [   1342]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2020-09-01 14:16:31,867 [   1377]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2020-09-01 14:16:31,918 [   1428]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: C:\Users\Jeff Kappalan\.gradle\caches\modules-2\files-2.1\com.jetbrains.intellij.idea\ideaIC\2020.2.1\a3f8c1e5b23dacbb6515571c2d97b455643d766d\ideaIC-2020.2.1\bin\win\fsnotifier64.exe 
+2020-09-01 14:16:31,926 [   1436]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2020-09-01 14:16:31,926 [   1436]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2020-09-01 14:16:31,958 [   1468]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2020-09-01 14:16:31,971 [   1481]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2020-09-01 14:16:32,501 [   2011]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2020-09-01 14:16:32,522 [   2032]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.p9.show.roots.in.file.chooser, inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, copy.reference.popup, new.large.text.file.viewer, property.value.inplace.editing, terminal.shell.command.handling 
+2020-09-01 14:16:34,662 [   4172]   INFO - il.indexing.FileBasedIndexImpl - Indexes to be rebuilt after version change:FilenameIndex(vfs creation stamp : 1598962516400 -> 1598962591829),FrameworkDetectionIndex(vfs creation stamp : 1598962516400 -> 1598962591829),TodoIndex(vfs creation stamp : 1598962516400 -> 1598962591829),IdIndex(vfs creation stamp : 1598962516400 -> 1598962591829),filetypes(vfs creation stamp : 1598962516400 -> 1598962591829),Stubs(vfs creation stamp : 1598962516400 -> 1598962591829),Trigram.Index(vfs creation stamp : 1598962516400 -> 1598962591829),fileIncludes(vfs creation stamp : 1598962516400 -> 1598962591829),DomFileIndex(vfs creation stamp : 1598962516400 -> 1598962591829),RelaxSymbolIndex(vfs creation stamp : 1598962516400 -> 1598962591829),XmlTagNames(vfs creation stamp : 1598962516400 -> 1598962591829),XmlNamespaces(vfs creation stamp : 1598962516400 -> 1598962591829),html5.custom.attributes.index(vfs creation stamp : 1598962516400 -> 1598962591829),SchemaTypeInheritance(vfs creation stamp : 1598962516400 -> 1598962591829),json.file.root.values(vfs creation stamp : 1598962516400 -> 1598962591829),XsltSymbolIndex(vfs creation stamp : 1598962516400 -> 1598962591829),bytecodeAnalysis(vfs creation stamp : 1598962516400 -> 1598962591829),java.auto.module.name(vfs creation stamp : 1598962516400 -> 1598962591829),java.source.module.name(vfs creation stamp : 1598962516400 -> 1598962591829),java.null.method.argument(vfs creation stamp : 1598962516400 -> 1598962591829),java.fun.expression(vfs creation stamp : 1598962516400 -> 1598962591829),java.binary.plus.expression(vfs creation stamp : 1598962516400 -> 1598962591829),xmlProperties(vfs creation stamp : 1598962516400 -> 1598962591829),ant-imports(vfs creation stamp : 1598962516400 -> 1598962591829),com.intellij.uiDesigner.FormClassIndex(vfs creation stamp : 1598962516400 -> 1598962591829),JavaFxControllerClassIndex(vfs creation stamp : 1598962516400 -> 1598962591829),javafx.id.name(vfs creation stamp : 1598962516400 -> 1598962591829),javafx.custom.component(vfs creation stamp : 1598962516400 -> 1598962591829),editorconfig.index.name(vfs creation stamp : 1598962516400 -> 1598962591829),yaml.keys.name(vfs creation stamp : 1598962516400 -> 1598962591829),groovy.trait.fields(vfs creation stamp : 1598962516400 -> 1598962591829),groovy.trait.methods(vfs creation stamp : 1598962516400 -> 1598962591829),IdeaPluginRegistrationIndex(vfs creation stamp : 1598962516400 -> 1598962591829),PluginIdModuleIndex(vfs creation stamp : 1598962516400 -> 1598962591829),PluginIdDependenciesIndex(vfs creation stamp : 1598962516400 -> 1598962591829),devkit.ExtensionPointIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinPackageSourcesMemberNamesIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex(vfs creation stamp : 1598962516400 -> 1598962591829),org.jetbrains.kotlin.ide.konan.index.KotlinNativeMetaFileIndex(vfs creation stamp : 1598962516400 -> 1598962591829),com.android.tools.idea.model.AndroidManifestIndex$Companion$NAME$1.NAME(vfs creation stamp : 1598962516400 -> 1598962591829),BindingXmlIndex(vfs creation stamp : 1598962516400 -> 1598962591829),MlModelFileIndex(vfs creation stamp : 1598962516400 -> 1598962591829) 
+2020-09-01 14:16:34,666 [   4176]   INFO - leBasedIndexDataInitialization - Initialization done: 2746 
+2020-09-01 14:16:34,863 [   4373]   INFO - tellij.psi.stubs.StubIndexImpl - Following stub indices will be built:dom.namespaceKey(v = 1),dom.elementClass(v = 0),properties.index(v = 2),gr.class.fqn(v = 1),gr.script.fqn(v = 2),gr.field.name(v = 2),gr.method.name(v = 2),gr.annot.method.name(v = 2),gr.annot.members(v = 2),gr.script.class(v = 2),gr.class.super(v = 2),gr.anonymous.class(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelExtensionsByReceiverTypeIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex(v = 3),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyNothingPropertyShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinProbablyContractedFunctionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeClassByPackageIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasByExpansionShortNameIndex(v = 2),org.jetbrains.kotlin.idea.stubindex.KotlinOverridableInternalMembersShortNameIndex(v = 2),markdown.header(v = 2),java.annotations(v = 2),java.class.extlist(v = 3),java.field.name(v = 2),java.method.name(v = 2),jvm.static.member.name(v = 2),jvm.static.member.type(v = 2),java.anonymous.baseref(v = 2),java.method.parameter.types(v = 3),java.class.shortname(v = 4),java.class.fqn(v = 1),java.module.name(v = 4) 
+2020-09-01 14:16:34,864 [   4374]   INFO - exImpl$StubIndexInitialization - Initialization done: 197 
+2020-09-01 14:16:42,208 [  11718]   INFO - lij.impl.ConversionServiceImpl - conversion will be performed because at least C:\Users\Jeff Kappalan\IdeaProjects\woooh\.idea\workspace.xml is changed (oldLastModified=1598962237892, newLastModified=1598962594939 
+2020-09-01 14:16:42,250 [  11760]   INFO - BridgeProjectLifecycleListener - Using legacy project model to open project 
+2020-09-01 14:16:42,485 [  11995]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2020-09-01 14:16:42,572 [  12082]   INFO - CompilerWorkspaceConfiguration - Available processors: 4 
+2020-09-01 14:16:42,641 [  12151]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=org.jetbrains.android.compose.AndroidComposeAutoDocumentation) 
+2020-09-01 14:16:43,036 [  12546]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2020-09-01 14:16:43,060 [  12570]   WARN - tartup.impl.StartupManagerImpl - Activities registered via registerPostStartupActivity must be dumb-aware: org.jetbrains.kotlin.idea.configuration.ui.KotlinConfigurationCheckerComponent$projectOpened$1@71870ab6 
+2020-09-01 14:16:43,297 [  12807]   INFO - ots.impl.jdkDownloader.JdkAuto - Looking for a local SDK for JDK with name SdkLookup{JDK, com.intellij.openapi.roots.ui.configuration.SdkLookupImpl$continueSdkLookupWithSuggestions$unknownSdk$1$$special$$inlined$let$lambda$1@32712c98 } 
+2020-09-01 14:16:43,569 [  13079]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,570 [  13080]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,574 [  13084]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,574 [  13084]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,574 [  13084]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,574 [  13084]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,575 [  13085]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,619 [  13129]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 6 millis (read time: 1) 
+2020-09-01 14:16:43,626 [  13136]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,629 [  13139]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,661 [  13171]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,661 [  13171]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,661 [  13171]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,661 [  13171]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,661 [  13171]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,662 [  13172]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,662 [  13172]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,662 [  13172]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,662 [  13172]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,700 [  13210]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,700 [  13210]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,700 [  13210]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,700 [  13210]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,700 [  13210]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,700 [  13210]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,701 [  13211]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,701 [  13211]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,701 [  13211]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:43,719 [  13229]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@253e6a68 
+2020-09-01 14:16:43,734 [  13244]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 10ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-01 14:16:43,786 [  13296]   INFO - ProjectRootPostStartUpActivity - C:/Users/Jeff Kappalan/IdeaProjects/woooh/.idea case-sensitivity: expected=false actual=false 
+2020-09-01 14:16:43,820 [  13330]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 457ms; general responsiveness: ok; EDT responsiveness: ok 
+2020-09-01 14:16:43,831 [  13341]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 1609 ms 
+2020-09-01 14:16:44,466 [  13976]   INFO - ctRoots.impl.UnknownSdkTracker - Automatically set Sdk SdkLookup{JDK, com.intellij.openapi.roots.ui.configuration.SdkLookupImpl$continueSdkLookupWithSuggestions$unknownSdk$1$$special$$inlined$let$lambda$1@32712c98 } to C:\Code Environment\Java\jdk-11.0.8 
+2020-09-01 14:16:44,615 [  14125]   WARN - ion.impl.NotificationCollector - Notification group 'Heap Dump Analysis' is already registered in whitelist 
+2020-09-01 14:16:44,615 [  14125]   WARN - ion.impl.NotificationCollector - Notification group 'Low Memory' is already registered in whitelist 
+2020-09-01 14:16:44,831 [  14341]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,832 [  14342]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,832 [  14342]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,832 [  14342]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,832 [  14342]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,832 [  14342]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,833 [  14343]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,833 [  14343]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,833 [  14343]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,862 [  14372]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,863 [  14373]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,863 [  14373]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,863 [  14373]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,863 [  14373]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,863 [  14373]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,864 [  14374]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,864 [  14374]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,864 [  14374]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:44,947 [  14457]   INFO - ots.impl.jdkDownloader.JdkAuto - Looking for a local SDK for JDK with name MissingSdkInfo(mySdkName=11, mySdkType=JavaSDK) 
+2020-09-01 14:16:45,027 [  14537]   INFO - ctRoots.impl.UnknownSdkTracker - Automatically set Sdk MissingSdkInfo(mySdkName=11, mySdkType=JavaSDK) to C:/Code Environment/Java/jdk-11.0.8 
+2020-09-01 14:16:45,124 [  14634]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,125 [  14635]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,125 [  14635]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,125 [  14635]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,125 [  14635]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,125 [  14635]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,126 [  14636]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,126 [  14636]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,126 [  14636]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,136 [  14646]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,136 [  14646]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,137 [  14647]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,137 [  14647]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,137 [  14647]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,137 [  14647]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,138 [  14648]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,138 [  14648]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,138 [  14648]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,147 [  14657]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 1412ms; general responsiveness: ok; EDT responsiveness: 1/1 sluggish 
+2020-09-01 14:16:45,785 [  15295]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,785 [  15295]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,785 [  15295]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,785 [  15295]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,785 [  15295]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,785 [  15295]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,786 [  15296]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,786 [  15296]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:45,786 [  15296]   INFO -                         STDOUT - test2 
+2020-09-01 14:16:46,011 [  15521]   INFO - System.util.ExternalSystemUtil - External project [C:/Users/Jeff Kappalan/IdeaProjects/woooh] resolution task started 
